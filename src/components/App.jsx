@@ -3,15 +3,18 @@ import Header from './Header'
 import Footer from './Footer'
 import Note from './Note'
 import Button from './Button'
+import notes from '../../src/note'
 
-
+console.log (notes)
 const App = (props) => {
     return (
         <div>
            <Header /> 
-           <Note title= 'Ralu' content= 'Just a soft guy' />
-           <Note title= 'Jossy' content= 'The main mvp' />
-           <Note title= 'Kevin De Bruyne' content= 'Unstoppable force of nature' />
+            {notes.map((item) => {
+                return (
+                <Note title={item.title} content={item.content} />
+                )            
+            })}
            <Button />
            <Footer /> 
 
