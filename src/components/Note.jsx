@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Note = () => {
+const Note = (props) => {
     return (
         <div className = 'note'>
-            <h1>Title</h1>
-            <p>Content content content content content content  </p>
+            <h1>{props.title}<hr/> </h1> 
+            <p>{props.content} </p>
         </div>
     )
 }

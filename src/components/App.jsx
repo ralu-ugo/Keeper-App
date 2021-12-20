@@ -5,16 +5,13 @@ import Note from './Note'
 import Button from './Button'
 
 
-const App = () => {
+const App = (props) => {
     return (
         <div>
            <Header /> 
-           <Note />
-           <Note />
-           <Note />
-           <Note />
-           <Note />
-           <Note />
+           <Note title= 'Ralu' content= 'Just a soft guy' />
+           <Note title= 'Jossy' content= 'The main mvp' />
+           <Note title= 'Kevin De Bruyne' content= 'Unstoppable force of nature' />
            <Button />
            <Footer /> 
 
